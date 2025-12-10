@@ -39,7 +39,7 @@ elif menu == 'luas persegi panjang':
     st.image('https://www.doyanblog.com/wp-content/uploads/2023/05/rumus-luas-persegi-panjang.jpg.webp', caption='rumus persegi panjang')
     #ini rumus luas persegi panjang
     def LuasSegitiga(p, l):
-        return 0.5 * p * l
+        return p * l
     panjang = st.number_input('masukan panjang', min_value=0)
     lebar = st.number_input('masukan lebar', min_value=0)
     if st.button('hitung luas segitiga'):
