@@ -33,6 +33,20 @@ elif menu == 'luas segitiga':
         st.success(f'luas segitiga adalah {luas}')
         st.write(f'di atas adalah hasilnya, yaitu {luas}')
 
+elif menu == 'luas persegi panjang':
+    st.write('ini halaman unutk menghitung luas :red[persegi panjang:]')
+    st.markdown(':orange[ini warna biru persegi panjanag]')
+    st.image('https://www.doyanblog.com/wp-content/uploads/2023/05/rumus-luas-persegi-panjang.jpg.webp', caption='rumus persegi panjang')
+    #ini rumus luas persegi panjang
+    def LuasSegitiga(p, l):
+        return 0.5 * p * l
+    panjang = st.number_input('masukan panjang', min_value=0)
+    lebar = st.number_input('masukan lebar', min_value=0)
+    if st.button('hitung luas segitiga'):
+        luas = LuasSegitiga(panjang, lebar)
+        st.success(f'luas segitiga adalah {luas}')
+        st.write(f'di atas adalah hasilnya, yaitu {luas}')
+
 #ini menu buat pilih lingkaran yang di sebelah kiri
 elif menu == 'luas lingkaran':
     st.write('ini halaman unutk menghitung luas :red[Lingkaran:]')
@@ -46,20 +60,6 @@ elif menu == 'luas lingkaran':
         luas = LuasLingkaran(jari)
         st.success(f'luas lingkaran adalah {luas}')
         st.write(f'di atas adalah hasilnya, yaitu {luas}')
-        
-elif menu == 'luas persegi panjang':
-    st.write('ini halaman buat itung luas :red[persegi panjang]')
-    st.markdown(':orange[ini warna oren]')
-    st.image('https://www.doyanblog.com/wp-content/uploads/2023/05/rumus-luas-persegi-panjang.jpg.webp', caption='rumus persegi panjang')
-    #ini rumusnya
-    def LuasPersegiPanjang(p, l):
-        return p * l
-    panjang = st.number_input('masukan panjang', min_value=0)
-    lebar = st.number_input('masukan lebar', min_value=0)
-    if st.button('hitung luas persegi panjang'):
-        luas = LuasPersegiPanjang(panjang, lebar)
-        st.success(f'luas perseig panjang adalah {luas}')
-
 
 
 
