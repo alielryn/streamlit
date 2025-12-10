@@ -38,12 +38,12 @@ elif menu == 'luas persegi panjang':
     st.markdown(':orange[ini warna biru persegi panjanag]')
     st.image('https://www.doyanblog.com/wp-content/uploads/2023/05/rumus-luas-persegi-panjang.jpg.webp', caption='rumus persegi panjang')
     #ini rumus luas persegi panjang
-    def LuasSegitiga(p, l):
+    def LuasPersegiPanjang(p, l):
         return p * l
     panjang = st.number_input('masukan panjang', min_value=0)
     lebar = st.number_input('masukan lebar', min_value=0)
     if st.button('hitung luas segitiga'):
-        luas = LuasSegitiga(panjang, lebar)
+        luas = LuasPersegiPanjang(panjang, lebar)
         st.success(f'luas segitiga adalah {luas}')
         st.write(f'di atas adalah hasilnya, yaitu {luas}')
 
