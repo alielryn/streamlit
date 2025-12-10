@@ -46,6 +46,7 @@ elif menu == 'luas lingkaran':
         luas = LuasLingkaran(luas)
         st.success(f'luas lingkaran adalah {luas}')
         st.write(f'di atas adalah hasilnya, yaitu {luas}')
+        st.write('aowkowokw')
 
 
 
