@@ -41,12 +41,26 @@ elif menu == 'luas lingkaran':
     #ini rumus luas lingkaran
     def LuasLingkaran(r):
         return 3.14 * r * r
-    luas = st.number_input('masukan jari-jari', min_value=0)
+    jari = st.number_input('masukan jari-jari', min_value=0)
     if st.button('hitung luas lingkaran'):
-        luas = LuasLingkaran(luas)
+        luas = LuasLingkaran(jari)
         st.success(f'luas lingkaran adalah {luas}')
         st.write(f'di atas adalah hasilnya, yaitu {luas}')
-        st.write('aowkowokw')
+        
+elif menu == 'luas persegi panjang':
+    st.write('ini halaman buat itung luas :red[persegi panjang]')
+    st.markdown(':orange[ini warna oren]')
+    st.image('https://www.doyanblog.com/wp-content/uploads/2023/05/rumus-luas-persegi-panjang.jpg.webp', caption='rumus persegi panjang')
+    #ini rumusnya
+    def LuasPersegiPanjang(p, l)
+        return p * l
+    panjang = st.number_input('masukan panjang', min_value=0)
+    lebar = st.number_input('masukan lebar', min_value=0)
+    if st.button('hitung luas persegi panjang'):
+        luas = LuasPersegiPanjang(panjang, lebar)
+        st.success(f'luas perseig panjang adalah {luas}')
+        
+
 
 
 
